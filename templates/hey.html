@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1># ai-interpreter-score</h1>
+{% for x in users | reverse %}
+ <li>{{ x["first_name"]  }}</li>
+
+{% endfor %} 
+{% endblock %}
+{% block liens %}
+<a href="/">welcome</a>
+{% endblock %}
+<a href="/add_one_job"> add one job</a><a href="/add_one_places"> add one places</a><a href="/add_one_user"> add one user</a><a href="/add_one_fakecommunication"> add one fakecommunication</a>
